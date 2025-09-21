@@ -1,113 +1,158 @@
-<html lang="en-US"><head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="author" content="Benjamin Mbaisa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page for Benjamin Mbaisa's WDD 231 page">
-    <title>WDD 231 Student Info: Benjamin Mbaisa</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="description" content="A directory of chambers - WDD 231 Project">
+    <meta name="keywords" content="chamber, directory, listings">
+    <meta name="author" content="Benjamin Mbaisa">
+
+    <title>Chamber of Commerce - Directory Page</title>
+
+    <meta property="og:title" content="MALAWI - Chamber of Commerce - Directory">
+    <meta property="og:description" content="Promoting Business Excellence and Economic Growth in Malawi">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="scripts/nav.js" defer=""></script>
-    <script src="scripts/courses.js" defer=""></script>
-    <script src="scripts/dates.js" defer=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    
+    <script src="scripts/directory.js" defer=""></script>
+
+    <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
     <header>
-        <img src="images/logo.svg" alt="site logo" width="512" height="512">
-        <span>WDD 231 - Web Frontend Development I</span>
-        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
-    </header>
-    <nav id="nav-bar" class="nav-menu">
-        <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="#">Chamber Project</a></li>
-            <li><a href="#">Final Project</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>WDD 231 Student Info: Benjamin Mbaisa</h1>
-        <div class="my-info">
-            <section>
-                <h2>About Me</h2>
-                <div class="content">
-                    <p>
-                        Hello! My name is Benjamin Mbaisa, and I am a dedicated student currently pursuing my studies in Computer Science. 
-                        I have a strong passion for technology and programming, which has driven me to excel in my coursework and projects. 
-                        I am particularly interested in web development and software engineering, 
-                        and I enjoy learning new programming languages and frameworks.
-                        My goal is to leverage my education and experiences to contribute to innovative tech solutions that can make a positive impact on society.
-              
-                        
-                    </p>            
-                </div>
-            </section>
-            <section>
-                <h2>Student Photo</h2>
-                <div class="photo">
-                    <img  src="images/profile.jpg" alt="profile photo of Benjamin Mbaisa" width="400"> 
-                </div>
-            </section>
-        </div>
-        <section>
-            <h2>Web Certificate Courses</h2>
-            <div class="courses-showcase">
-                <div class="buttons">
-                    <button id="all-btn" class="filter-btn selected" aria-label="remove-filter">ALL</button>
-                    <button id="cse-btn" class="filter-btn" aria-label="cse-filter">CSE</button>
-                    <button id="wdd-btn" class="filter-btn" aria-label="wdd-filter">WDD</button>
-                </div>
-                <div class="courses" id="showcase">
-            <div class="course-card done">
-                ✓ CSE 110
-            </div>
-        
-            <div class="course-card done">
-                ✓ WDD 130
-            </div>
-        
-            <div class="course-card done">
-                ✓ CSE 111
-            </div>
-        
-            <div class="course-card done">
-                ✓ CSE 210
-            </div>
-        
-            <div class="course-card done">
-                ✓ WDD 131
-            </div>
-        
-            <div class="course-card not-done">
-                 WDD 231
-            </div>
-        </div>
-                <div class="summary" id="courses-summary">
-        <p class="credits">Total credits for the <strong>6</strong> courses above: <strong>12</strong></p>
-        <p class="credits">Credits completed: <strong>10</strong> out of <strong>12</strong></p>
-    </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="social">
-            <a href="" target="_blank">
-                <img src="./images/linkedin.svg" alt="LinkedIn logo" width="16" height="16">
-            </a>
-            <a href="" target="_blank">
-                <img src="./images/github.svg" alt="Github logo">
-            </a>
-            <a href="" target="_blank">
-                <img src="./images/instagram.svg" alt="Instagram logo" width="16" height="16">
-            </a> 
+        <div class="title">
+            <img src="images/logo.webp" alt="logo" loading="lazy" width="512" height="512">
+            <span> Malawi - Chamber of Commerce </span>
         </div>
 
-        <p>
-            © <span id="currentYear">2025</span> Benjamin Mbaisa, Malawi
-        </p>
-        <p id="lastModified">Last Modification: 09/06/2025 20:39:19</p>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#"> Home </a></li>
+                <li class="current"><a href="#"> Directory </a></li>
+                <li><a href="#"> Join </a></li>
+                <li><a href="#"> Discover </a></li>
+            </ul>
+        </nav>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <main>
+        <section>
+            <img src="images/chamber of commerce.webp" alt="A picture showing a chamber of commerce building" loading="lazy" width="600" height="400">
+            <div class="cta">
+                <div class="hero-info">
+                    <h1>Welcome to the Chamber of Commerce Directory</h1>
+                    <p>Discover and connect with local businesses and organizations in Malawi. Explore our comprehensive directory to find the services you need and support the growth of our vibrant business community.</p>
+                    <a href="#">Join Now</a>
+                </div>
+
+            </div>
+        </section>
+        <div class="container">
+            <div class="container">
+        <h1 class="page-title">Home</h1>
+        <section class="dynamic-cards">
+          <div class="data-cards-container">
+            <div class="data-card event">
+              <h2 class="data-card-title">Events</h2>
+              <div>
+                <p>Coming soon...</p>
+              </div>
+            </div>
+
+            <div class="data-card current-weather">
+              <h2 class="data-card-title">Current Weather</h2>
+              <div id="current-weather"><img src="https://openweathermap.org/img/wn/04n@2x.png" alt="overcast clouds" width="100" height="100" loading="lazy"><div class="current-temp-info"><p><b>21</b>°C</p>
+      <p class="temp-desc">Forecast clouds</p>
+      <p>High: 30°C</p>
+      <p>Low: 20°C</p>
+      <p>Humidity: 62%</p>
+      <p>Sunrise: 07:19 AM</p>
+      <p>Sunset: 07:28 PM</p></div></div>
+            </div>
+            <div class="data-card weather-forecast">
+              <h2 class="data-card-title">Weather Forecast</h2>
+              <div id="weather-forecast" class="forecast-info">
+            <p>Today: 30°C</p>
+            <p>Sunday: 27°C</p>
+            <p>Monday: 28°C</p>
+          </div>
+            </div>
+
+            
+            <div class="spotlight-card-container">
+                
+           
+
+             <div class="spotlight-card"><div class="upper"><h3>MCCC</h3></div>
+                   <div class="lower">
+                 <img src="" alt="mccci logo" width="100" height="100" loading="lazy">
+                <div class="info"> 
+                  <p><b>Email:</b> mccci@mccci.org</p>
+                     <p><b>Phone:</b> +(265) 999 970 950</p>
+               <p><b>Membership Level:</b> Silver</p>
+                 <a href="https://www.mccci.org/" target="_blank" rel="noopener noreferrer"><b>URL:</b> https://www.mccci.org/</a>
+                    </div>
+  
+                    </div>
+                </div>
+                 <div class="spotlight-card">
+                    <div class="upper"><h3>MCCCI</h3></div>
+                <div class="lower">
+                   <img src="" alt="mccci Logo" width="100" height="100" loading="lazy">
+                  <div class="info"> 
+                   <p><b>Email:</b> mccci@mccci.org</p>
+                       <p><b>Phone:</b>  +(265) 999 970 950</p>
+                         <p><b>Membership Level:</b> Gold</p>
+                       <a href="https://www.mccci.org/" target="_blank" rel="noopener noreferrer"><b>URL:</b> https://www.mccci.org/</a>
+                       </div>
+  
+                       </div>
+                    </div>
+                    <div class="spotlight-card"><div class="upper"><h3>MCCCI</h3></div>
+                           <div class="lower">
+                             <img src="" alt="mccis Logo" width="100" height="100" loading="lazy">
+                           <div class="info"> 
+                      <p><b>Email:</b> mccci@mccci.org</p>
+                       <p><b>Phone:</b>  +(265) 999 970 950</p>
+                         <p><b>Membership Level:</b> Gold</p>
+                       <a href="https://www.mccci.org/" target="_blank" rel="noopener noreferrer"><b>URL:</b> https://www.mccci.org/</a>
+                           </div>
+  
+                             </div>
+                            </div>
+                        </div>
+        
+        
+                              </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="info-left">
+                <p>Contact Info</p>
+                <p>Malawi</p>
+                <p>Email: bmbaisa@byupathway.edu</p>
+                <p>Number: +265 088 406 49 44</p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/benjamin265-sm" target="_blank"><img src="images/github.svg" loading="lazy" alt="facebook" width="16" height="16"></a>
+                <a href="" target="_blank"><img src="images/linkedin.svg" loading="lazy" alt="linkedin" width="16" height="16"></a>
+                <a href="" target="_blank"><img src="images/facebook.svg" alt="facebook" loading="lazy" width="16" height="16"></a>
+            </div>
+            
+            <div class="info-right">
+                <p>WDD231 Class Project</p>
+                <p>Benjamin Mbaisa</p>
+                <p>©<span id="currentyear">2025</span> Chamber of Commerce</p>
+                <p id="lastModified">Last Modified: 09/11/2025 22:20:53</p>
+            </div>
+        </div>
     </footer>
+
 
 </body></html>
