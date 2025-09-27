@@ -206,15 +206,15 @@ form input[type="submit"]:hover {
 }
 
 .level-options .bronze {
-    background-color: #CE8946;
+    background-color: #e9a664;
 }
 
 .level-options .silver {
-    background-color: #C0C0C0;
+    background-color: #d1cfcf;
 }
 
 .level-options .gold {
-    background-color: #FFD700;
+    background-color: #b99e01;
 }
 
 .level-options h3 {
