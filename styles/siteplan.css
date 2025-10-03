@@ -1,0 +1,73 @@
+/* Site Plan styling — uses the chosen colors and typography for the document */
+:root{
+    --primary: #0B6B4F; /* Cascade Green */
+    --accent: #FF6B6B;  /* Sunset Coral */
+    --neutral-bg: #F6F7F5; /* Soft Fog */
+    --text: #2b2b2b;
+    --muted: #6b6b6b;
+}
+
+html,body{
+    height:100%;
+    margin:0;
+    font-family: 'Lora', serif;
+    background:var(--neutral-bg);
+    color:var(--text);
+}
+
+main{
+    max-width:900px;
+    margin:32px auto;
+    padding:24px;
+    background:#fff;
+    box-shadow:0 6px 18px rgba(11,107,79,0.06);
+    border-radius:8px;
+}
+
+.intro h1{
+    margin:0 0 8px 0;
+    font-family: 'Montserrat', sans-serif;
+    color:var(--primary);
+    font-weight:700;
+    font-size:1.6rem;
+}
+
+.tagline{
+    margin:0 0 16px 0;
+    color:var(--muted);
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color:var(--primary);
+    font-weight:700;
+    margin-top:20px;
+}
+
+.lead{
+    font-weight:700;
+}
+
+.muted{ color:var(--muted); }
+
+ul.colors{ list-style:none; padding:0; }
+ul.colors li{ margin-bottom:8px; display:flex; align-items:center; gap:12px; }
+
+.swatch{ display:inline-block; width:28px; height:18px; border-radius:4px; box-shadow:0 1px 0 rgba(0,0,0,0.06); }
+.swatch.primary{ background:var(--primary); }
+.swatch.accent{ background:var(--accent); }
+.swatch.neutral{ background:var(--neutral-bg); border:1px solid #e6e6e6; }
+
+.wireframes{ display:flex; gap:20px; flex-wrap:wrap; margin-top:12px; }
+figure{ margin:0; width:100%; }
+figure figcaption{ font-size:0.9rem; color:var(--muted); margin-bottom:6px; }
+svg.wf{ width:100%; height:auto; background:#fff; border-radius:6px; }
+svg.wf.mobile{ max-width:220px; }
+svg.wf.desktop{ max-width:420px; }
+
+.site-footer{ margin-top:26px; border-top:1px solid #eee; padding-top:12px; color:var(--muted); font-size:0.95rem; }
+
+@media(min-width:760px){
+    .wireframes{ flex-wrap:nowrap; }
+    figure{ width:50%; }
+}
